@@ -2,6 +2,8 @@
 
 [Vue](https://vuejs.org/) running on Web, iOS, Android and Vision Pro.
 
+https://github.com/NativeScript/vue-x-platforms/assets/457187/3efa0cc7-b2c4-49da-b477-b00fe6fd408f
+
 ## Setup
 
 Prerequisites:
