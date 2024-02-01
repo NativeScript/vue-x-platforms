@@ -9,8 +9,8 @@ defineProps<{
     <div class="container">
       <div id="welcome">
         <h1>
-          <span> Hello there, </span>
-          Welcome Vue {{ title }} 👋
+          <span> Hello Vue 👋</span>
+          Happy Valentine Month 🌹
         </h1>
       </div>
 

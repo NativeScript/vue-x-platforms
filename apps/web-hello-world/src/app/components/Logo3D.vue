@@ -38,7 +38,7 @@ import THREE from './three';
       this.camera.position.set(-5, -5, 20);
   
       this.renderer = new THREE.WebGLRenderer({ alpha: true });
-      this.renderer.setClearColor(0xffffff);
+      // this.renderer.setClearColor(0xffffff);
       this.renderer.setPixelRatio(window.devicePixelRatio);
       this.renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(this.renderer.domElement);

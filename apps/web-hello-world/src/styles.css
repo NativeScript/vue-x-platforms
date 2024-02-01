@@ -7,10 +7,18 @@ html {
   tab-size: 4;
   scroll-behavior: smooth;
 }
+@keyframes bg {
+  0% { background: #42b883cc; }
+  50% { background: #35495ea9; }
+  100% { background: #42b883cc; }
+}
+
 body {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
+  background: #000;
+  animation: bg 5s linear infinite;
 }
 h1,
 h2,

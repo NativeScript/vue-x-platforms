@@ -111,7 +111,7 @@ const loadedHeartArea = (args) => {
           <GridLayout row="1" class="align-middle px-4" @tap="showLove">
             <Label
               class="bg-[#42b883cc] rounded-xl font-bold text-[#35495e] mt-8 text-center p-4 vision:text-6xl ios:text-3xl  android:text-3xl"
-              >Vue Valentine? ❤️</Label
+              >Vue Valentine ❤️</Label
             >
           </GridLayout>
         </GridLayout>
