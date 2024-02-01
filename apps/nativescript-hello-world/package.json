@@ -1,0 +1,20 @@
+{
+  "name": "nativescript-hello-world",
+  "version": "1.0.0",
+  "main": "./src/app.ts",
+  "private": true,
+  "dependencies": {
+    "@nativescript-community/ui-pager": "^14.1.16",
+    "@nativescript/core": "vision",
+    "@nativescript/swift-ui": "vision",
+    "@nativescript/tailwind": "~2.0.1",
+    "nativescript-vue": "3.0.0-rc.1",
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.6.0",
+    "@nativescript/ios": "~8.6.0",
+    "@nativescript/visionos": "~8.6.0",
+    "typescript": "~5.3.0"
+  }
+}

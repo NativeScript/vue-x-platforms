@@ -1,0 +1,61 @@
+{
+  "name": "@vue-x-platforms/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "setup": "npx rimraf hooks node_modules package-lock.json yarn.lock && npm install && nx run-many --target=clean --all",
+    "postinstall": "npx patch-package",
+    "android": "nx run nativescript-hello-world:android",
+    "ios": "nx run nativescript-hello-world:ios",
+    "vision": "nx run nativescript-hello-world:vision",
+    "web": "nx serve web-hello-world"
+  },
+  "dependencies": {
+    "@nativescript/core": "vision",
+    "@nativescript/swift-ui": "vision",
+    "nativescript-vue": "3.0.0-rc.1",
+    "three": "^0.160.1",
+    "vue": "^3.4.15",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@nativescript/nx": "^17.1.0",
+    "@nativescript/tailwind": "~2.0.1",
+    "@nativescript/types": "~8.6.0",
+    "@nativescript/webpack": "vision",
+    "@nx/eslint": "17.2.8",
+    "@nx/eslint-plugin": "17.2.8",
+    "@nx/js": "17.2.8",
+    "@nx/vite": "17.2.8",
+    "@nx/vue": "17.2.8",
+    "@nx/workspace": "17.2.8",
+    "@swc-node/register": "~1.6.7",
+    "@swc/core": "~1.3.85",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitest/coverage-v8": "~0.34.6",
+    "@vitest/ui": "~0.34.6",
+    "@vue/eslint-config-prettier": "7.1.0",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/test-utils": "^2.4.1",
+    "@vue/tsconfig": "^0.4.0",
+    "eslint": "~8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-vue": "^9.16.1",
+    "jsdom": "~22.1.0",
+    "nx": "17.2.8",
+    "patch-package": "^8.0.0",
+    "prettier": "^2.6.2",
+    "tailwindcss": "~3.2.0",
+    "typescript": "~5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "~0.34.6",
+    "vue-tsc": "^1.8.8"
+  },
+  "nativescript-nx": {
+    "prefix": "vue-x-platforms",
+    "framework": "vue"
+  }
+}

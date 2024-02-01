@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ActionBar {
+  background-color: #FAE8EB;
+  color: #3f3f3f;
+  text-align: center;
+}

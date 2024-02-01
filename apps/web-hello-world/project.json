@@ -1,0 +1,68 @@
+{
+  "name": "web-hello-world",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/web-hello-world/src",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/web-hello-world",
+        "skipTypeCheck": true
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "web-hello-world:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "web-hello-world:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "web-hello-world:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "web-hello-world:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "web-hello-world:build:development"
+        },
+        "production": {
+          "buildTarget": "web-hello-world:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/apps/web-hello-world"
+      }
+    }
+  }
+}
