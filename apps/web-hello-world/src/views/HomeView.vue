@@ -4,6 +4,6 @@ import NxWelcome from '../app/NxWelcome.vue';
 
 <template>
   <main>
-    <NxWelcome />
+    <NxWelcome title="Vue" />
   </main>
 </template>

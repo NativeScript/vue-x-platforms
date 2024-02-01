@@ -1,6 +1,5 @@
 import { CoreTypes, TouchManager, View } from '@nativescript/core';
 import { createApp } from 'nativescript-vue';
-// import '@nativescript/canvas-polyfill';
 import Home from './components/Home.vue';
 
 const originalTransform = Symbol('originalTransform');

@@ -145,7 +145,7 @@ function frame()
     else
     {
       heart.parentNode.removeChild(heart);
-      hearts.splice(i, 1);
+      hearts.splice(+i, 1);
     }
   }
 }

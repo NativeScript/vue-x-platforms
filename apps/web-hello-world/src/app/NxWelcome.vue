@@ -9,7 +9,7 @@ defineProps<{
     <div class="container">
       <div id="welcome">
         <h1>
-          <span> Hello Vue 👋</span>
+          <span> Hello {{ title }} 👋</span>
           Happy Valentine Month 🌹
         </h1>
       </div>
@@ -210,15 +210,11 @@ pre {
   color: rgba(255, 255, 255, 1);
   background-color: hsla(162, 47%, 50%, 1);
 }
-.list-item-link:hover > span {
-}
 .list-item-link:hover > span > span {
   color: rgba(243, 244, 246, 1);
 }
 .list-item-link:hover svg:last-child {
   transform: translateX(0.25rem);
-}
-#other-links {
 }
 .button-pill {
   padding: 1.5rem 2rem;

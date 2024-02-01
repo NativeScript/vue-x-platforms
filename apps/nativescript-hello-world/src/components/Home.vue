@@ -1,8 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'nativescript-vue';
-import Canvas from './Canvas.vue';
 import Pager from './Pager.vue';
-import { CoreTypes, GridLayout } from '@nativescript/core';
+import { Color, CoreTypes, GridLayout } from '@nativescript/core';
 
 const progress = ref(0);
 const updateProgress = (newProgress: number) => {
@@ -18,14 +17,14 @@ const loadedPage = (args) => {
 const animateBgColor = () => {
   grid
     .animate({
-      backgroundColor: '#42b883cc',
+      backgroundColor: new Color('#42b883cc'),
       duration: 2000,
       curve: CoreTypes.AnimationCurve.easeInOut,
     })
     .then(() => {
       grid
         .animate({
-          backgroundColor: '#35495ea9',
+          backgroundColor: new Color('#35495ea9'),
           duration: 2000,
           curve: CoreTypes.AnimationCurve.easeInOut,
         })
@@ -40,7 +39,6 @@ const animateBgColor = () => {
   <Frame>
     <Page actionBarHidden="true">
       <GridLayout rows="*" @loaded="loadedPage">
-        <Canvas :progress="progress" />
         <Pager @updateIndex="updateProgress" />
       </GridLayout>
     </Page>
